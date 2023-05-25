@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2{
+    font-size: 220%;
+}
+
+:root{
+    --cinzafundo: #252628;
+    --cinzasecundario: #151417;
+    --preto: #0b0b0c;
+    --azul: #210DFF;
+    --amarelo: #FAB613;
+    --vermelho: #FF1A2A;
+    --branco: #fffff4;
+    --branco2: #999999;
+}
+
+@font-face { font-family: 'ptsans-normal' ; src: url(PTSansNarrow-Regular.ttf);}
+@font-face { font-family: 'ptsans-bold' ; src: url(PTSansNarrow-Bold.ttf);}
+@font-face { font-family: 'abel'; src: url(Abel-Regular.ttf);}
+body{
+    background-color: var(--branco2);
+}
+header{
+    background-color: var(--cinzafundo);
+    height: 100vh;
+   background-image: url(img/fundo.png);
+   background-size: 100vh;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    padding: 2vh 5vh;
+}
+
+
+.titulo h1{
+    font-family: 'ptsans-bold';
+    text-shadow: 0 0 15px var(--vermelho);
+}
+
+.titulo h2{
+    font-family: 'ptsans-normal';
+    text-shadow: 0 0 10px var(--vermelho);
+}
+
+.navegacao a{
+    text-decoration: none;
+    color: var(--branco);
+    font-family: 'ptsans-normal';
+    font-size: 130%;
+    margin-right: 30px;
+    transition: .5s;
+}
+
+.navegacao a:hover{
+    color: var(--branco2);
+}
+
+.contatos img{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    filter:invert(1);
+    transition: all .5s;
+}
+.contatos img:hover{
+    scale: 1.2;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40vh 0;
+    color: var(--branco);
+}
+/* sobre */
+main{
+    display: flex;
+    align-items: center;
+    margin: 5%;
+}
+
+main .avatar{
+    height: 90vh;
+    border-radius: 2%;
+    box-shadow: 0 3px 0 0  #00000091;
+}
+
+main p{
+    text-align: justify;
+}
+
+.texto{
+    margin: 0 5vw;
+}
+
+.texto h2{
+    font-family: 'ptsans-bold';
+    margin: 3.5vh;
+   
+}
+.texto p{
+    font-family: Abel;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.skills img{
+    height: 2.5vh;
+}
+.skill{
+    display: flex;
+    flex-direction: row-reverse;
+   margin-right: 45%;
+    align-items: center;
+    gap: 5px;
+}
+.skill .icone-main{
+    margin-right: 3%;
+    height: 5vh;
+}
+.estrelas{
+    margin-right: 2.5px;
+}
+/* flipcards*/
+.projetos{
+    font-family: 'ptsans-bold' ;
+    margin-left: 5vw;
+}
+.containerflip{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.carta{
+    position: relative;
+    height: 35vh;
+    width: 35vh;
+    margin: 2%;
+    perspective: 1000px;
+}
+.carta .flip{
+    transition: transform 0.8s;
+    transform-style: preserve-3d ;
+}
+.carta:hover .flip{
+    transform: rotatey(180deg);
+}
+.frente, .costas{
+    position: absolute;
+    backface-visibility: hidden;
+}
+.costas{
+    transform: rotateY(180deg);
+    height: 35vh;
+    width: 35vh;
+    border-radius: 5px;
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'abel';
+    text-align: center;
+    box-shadow: 0 3px 0 0  #00000091;
+}
+.costas a{
+    margin-top: 10px;
+    color: var(--branco);
+    text-decoration: none;
+    background-color: var(--vermelho);
+    box-shadow: 0 2px var(--cinzasecundario);
+    padding: 2.8%;
+    border-radius: 5%;
+    transition: .5s;
+    font-size: 110%;
+    cursor: pointer;
+}
+.costas a:hover{
+    scale: 1.2;
+    filter: brightness(.7);
+}
+.frente img, .costas img{
+    border-radius: 5px;
+    box-shadow: 0 3px 0 0  #00000091;
+    height: 35vh;
+}
+section .costas{
+    position: relative;
+}
+.textocostas{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+.costas span{
+    margin-bottom: 15px;
+}
+/*sites*/
+
+
+.sitesdesc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-family:'ptsans-normal' ;
+    margin: 7% 0;
+    transition: all .5s;
+}
+.sitesdesc img{
+    border-radius: 5px;
+    box-shadow: 0 3px 0 0  #00000091;
+    width: 45vw;
+}
+.sitesdesc h3{
+    margin-top: 2.5%;
+    font-size: 180%;
+    font-weight: bold;
+    text-align: center;
+}
+.sitesdesc p{
+    text-align: center;
+    margin:1% 25% 2% 25% ;
+}
+.sitesdesc button{
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: var(--vermelho);
+    box-shadow: 0 2px var(--cinzasecundario);
+    padding: 1vw 3vh;
+    border: none;
+    border-radius: 5%;
+    transition: all .5s;
+    cursor: pointer;
+    margin: 15px 5px 0;
+}
+.sitesdesc button:hover{
+    scale: 1.2;
+    filter: brightness(.7);
+}
+.sitesdesc button.b2{
+    background-color: var(--azul);
+}
+/*parte inferior */
+
+.barrainferior{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 0 5vh 2vh 5vh;
+    font-family: 'ptsans-bold';
+}
+.barrainferior a{
+    color: var(--cinzafundo);
+    text-decoration: none;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.barrainferior a:hover{
+    scale: 1.2;
+    color: var(--cinzasecundario);
+}
+
+.barrainferior img{
+    height:50px;
+}
+
+/*footer*/
+footer{
+    background-color: var(--cinzafundo);
+    background-image: url(img/fundo.png);
+    background-size: 10vh;
+    font-family:'ptsans-normal' ;
+    color: var(--branco);
+    padding-bottom: 15px;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    text-align: center;
+    padding: 2% 0 1% 0;
+}
+
+footer img{
+    height: 30px;
+    width: 30px;
+}
+.itens-foot a{
+    text-decoration: none;
+    color: var(--branco);
+    transition: .5s;
+}
+.itens-foot a:hover{
+    color: var(--branco2);
+}
+.itens-foot img{
+    transition: .5s;
+    margin: 5px;
+    filter: invert(1);
+}
+.itens-foot img:hover{
+    scale: 1.2;
+}
+.itens-foot h3{
+    margin-bottom:15px;
+}
+.itens-foot p{
+    margin-bottom:5px;
+}
+.naipes img{
+    margin: 0 7px  ;
+}
+footer hr{
+    margin-bottom: 10px;
+    margin-left:10vw;
+    margin-right:10vw;
+}
+footer p{
+    text-align: center;
+}
+
+@media (max-width: 950px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    main .avatar{
+        height: 95vw;
+    }
+    .skill{
+        margin-right: 35%;
+    } 
+    .sitesdesc img{
+        width: 80vw;
+    }
+    .footer{
+      display: block;
+    }
+    .naipes{
+        margin: 5% 0;
+    }
+}
