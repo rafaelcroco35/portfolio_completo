@@ -189,30 +189,51 @@
     </script>
     <script>
         function selecaocopas() {
+            document.querySelector("#imagem").style.display = 'block';
+            document.querySelector("#descricao").style.display = 'block';
+            document.querySelector("#visite").style.display = 'block';
           document.querySelector("#imagem").src="img/site1.jpg";
           document.querySelector("#descricao").innerHTML = "<h3>Guildas de Ravnica(Grid)</h3><p>Site criado para testar as funções de Grid junto ao Flex-Box, além de aplicar animações do AOS (Animate On Scroll). Como tema visual foi escolhido o famoso Jogo de Cartas Colecionáveis Magic The Gathering, abordando a história das coleções de Ravnica e suas guildas de duas cores.</p>";
-          document.querySelector("#visite").innerHTML = " <a href='https://rafaelcroco35.github.io/FlexGrid/' target='_blank'><button > Visite o Site </button></a> <a href='#projetos'><button class='b2'> Voltar </button></a>";
+          document.querySelector("#visite").innerHTML = " <a href='https://rafaelcroco35.github.io/FlexGrid/' target='_blank'><button > Visite o Site </button></a> <a href='#projetos'><button class='b2' onclick='voltar()'> Voltar </button></a>";
         }
         function selecaopaus() {
+            document.querySelector("#imagem").style.display = 'block';
+            document.querySelector("#descricao").style.display = 'block';
+            document.querySelector("#visite").style.display = 'block';
           document.querySelector("#imagem").src="img/site2.jpg";
           document.querySelector("#descricao").innerHTML = "<h3>Zodíaco(Switchcase)</h3><p>Site criado para testar a função de Switchcase do JavaScript. Usando de temática os Signos do Zodíaco, além de contar com representações visuais do mangá Saint Seiya – The Lost Canvas, criado por Shiori Teshirogi em parceria com Masami Kurumada autor original da franquia dos Cavaleiros.</p>";
-          document.querySelector("#visite").innerHTML = "<a href='https://rafaelcroco35.github.io/Switch-Case-Signos/' target='_blank'> <button> Visite o Site </button> </a> <a href='#projetos'><button class='b2'> Voltar </button></a>";
+          document.querySelector("#visite").innerHTML = "<a href='https://rafaelcroco35.github.io/Switch-Case-Signos/' target='_blank'> <button> Visite o Site </button> </a> <a href='#projetos'><button class='b2' onclick='voltar()'> Voltar </button></a>";
         }
         function selecaoouros() {
+            document.querySelector("#imagem").style.display = 'block';
+            document.querySelector("#descricao").style.display = 'block';
+            document.querySelector("#visite").style.display = 'block';
           document.querySelector("#imagem").src="img/site3.jpg";
           document.querySelector("#descricao").innerHTML = "<h3>Tabuda(JavaScript)</h3><p>Site criado para aprender algumas funcionalidades matemáticas do JavaScript, focado em revelar tabuadas de quaisquer números.</p>";
-          document.querySelector("#visite").innerHTML = "<a href='https://rafaelcroco35.github.io/tabuada/' target='_blank'> <button > Visite o Site </button> </a> <a href='#projetos'><button class='b2'> Voltar </button></a>";
+          document.querySelector("#visite").innerHTML = "<a href='https://rafaelcroco35.github.io/tabuada/' target='_blank'> <button > Visite o Site </button> </a> <a href='#projetos'><button class='b2' onclick='voltar()'> Voltar </button></a>";
         }
         function selecaoespadas() {
+            document.querySelector("#imagem").style.display = 'block';
+            document.querySelector("#descricao").style.display = 'block';
+            document.querySelector("#visite").style.display = 'block';
           document.querySelector("#imagem").src="img/site4.jpg";
           document.querySelector("#descricao").innerHTML = "<h3>Relógio(JavaScript)</h3><p>Site criado para ser um relógio usando o JavaScript. Seu Visual é completamente baseado em Ben 10, famoso desenho animado do Cartoon Network.</p>"
-          document.querySelector("#visite").innerHTML = "<a href='https://rafaelcroco35.github.io/relogio-ben10/' target='_blank'> <button> Visite o Site </button></a> <a href='#projetos'><button class='b2'> Voltar </button></a>";
+          document.querySelector("#visite").innerHTML = "<a href='https://rafaelcroco35.github.io/relogio-ben10/' target='_blank'> <button> Visite o Site </button></a> <a href='#projetos'><button class='b2' onclick='voltar()'> Voltar </button></a>";
         }
         function selecaojoker() {
+            document.querySelector("#imagem").style.display = 'block';
+            document.querySelector("#descricao").style.display = 'block';
+            document.querySelector("#visite").style.display = 'block';
           document.querySelector("#imagem").src="img/site5.jpg";
           document.querySelector("#descricao").innerHTML = "<h3>Landing Page</h3><p>Um dos favoritos, uma Landing Page criada para uma fictícia campanha de Assinaturas Premium para a História em Quadrinhos de autoria própria.</p>"
-          document.querySelector("#visite").innerHTML = " <a href='https://rafaelcroco35.github.io/Landing-Page/' target='_blank'><button> Visite o Site </button></a> <a href='#projetos'><button class='b2'> Voltar </button></a>";
+          document.querySelector("#visite").innerHTML = " <a href='https://rafaelcroco35.github.io/Landing-Page/' target='_blank'><button> Visite o Site </button></a> <a href='#projetos'><button class='b2' onclick='voltar()'> Voltar </button></a>";
         }
+        function voltar() { 
+            document.querySelector("#imagem").style.display = 'none';
+          document.querySelector("#descricao").style.display = 'none';
+          document.querySelector("#visite").style.display = 'none';
+        }
+      
       </script>
 </body>
 
