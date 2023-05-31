@@ -108,6 +108,9 @@ main p{
 }
 .texto p{
     font-family: Abel;
+     text-indent: 5%;
+    font-size: 115%;
+    font-weight: 500;
 }
 .skills{
     display: flex;
